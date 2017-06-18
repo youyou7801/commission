@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+    function loadPages(loc){
+        //var loc = "https://www.google.fr/";
+
+       // document.getElementById('frame1Id').setAttribute('src', loc);
+	   document.getElementById('frame1Id').src = loc;
+
+
+    }
+    </script>
+		<title> Met le titre de l'onglet</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="..\HTML\style.css">
+		<link rel="stylesheet" type="text/css" href="..\HTML\treeview.css">
+
+	</head>
+
+	<body>
+
+		<!-- Div de la bannière -->
+		<div class="banner">
+		<p><img border="0" src="..\HTML\images\LogoAEFE1.gif" alt="" align="absmiddle"/> </br>
+		
+		<h2><font color="black">Commission Nationale des bourses scolaires<br>2017/2018<br></font></h2>
+		</p> 
+						
+
+		</div>
+
+		<!-- Div du menu -->
+		<div class="menu">
+				<p><h2><font color="black">Liste des postes </font></h2></p><HR> 		
+		<div class="css-treeview">
+			<ul>
+				<li><input type="checkbox" id="item-1-0" /><label for="item-1-0">ASIE</label>
+					<ul>
+						<li><input type="checkbox" id="item-1-1-0" /><label for="item-1-1-0">ARMENIE</label></li>
+					</ul>
+				</li>
+				<li><input type="checkbox" id="item-2-0" /><label for="item-2-0">MOYEN ORIENT</label>
+					<ul>
+						<li><input type="checkbox" id="item-2-1-0" /><label for="item-2-1-0">ARABIE SAOUDITE</label></li>
+					</ul></li>
+				<li><input type="checkbox" id="item-3-0" /><label for="item-3-0">AFRIQUE</label>
+					<ul>
+						<li><input type="checkbox" id="item-3-1-0" /><label for="item-3-1-0">AFRIQUE DU SUD</label></li>
+						<li><input type="checkbox" id="item-3-2-0" /><label for="item-3-2-0">ANGOLA</label></li>
+						<li><input type="checkbox" id="item-3-3-0" /><label for="item-3-3-0">BENIN</label²></li>
+						<li><input type="checkbox" id="item-3-4-0" /><label for="item-3-4-0">SENEGAL</label>
+							<ul>
+								<li><input type="checkbox" id="item-3-4-1" /><label for="item-3-4-1">DAKAR</label>
+									<ul>
+										<li><a href="javascript:loadPages('../HTML/PDF/FICHE CNB DKR.pdf');" > Ficher CNB</a></li>
+										<li><a href="javascript:loadPages('../HTML/PDF/FICHE COMP DKR.pdf');" >Fiche comparatif</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><input type="checkbox" id="item-4-0" /><label for="item-4-0">MAGHREB</label>
+					<ul>
+						<li><input type="checkbox" id="item-4-1-0" /><label for="item-4-1-0">ALGERIE</label></li>
+					</ul></li>
+				<li><input type="checkbox" id="item-5-0" /><label for="item-5-0">EUROPE</label>
+					<ul>
+						<li><input type="checkbox" id="item-5-1-0" /><label for="item-5-1-0">ALBANIE</label></li>
+					</ul></li>
+				<li><input type="checkbox" id="item-6-0" /><label for="item-6-0">AMERIQUE CENTRALE ET SUD</label>
+					<ul>
+						<li><input type="checkbox" id="item-6-1-0" /><label for="item-6-1-0">BRESIL</label></li>
+					</ul></li>
+				<li><input type="checkbox" id="item-7-0" /><label for="item-7-0">AMERIQUE DU NORD</label>
+					<ul>
+						<li><input type="checkbox" id="item-7-1-0" /><label for="item-7-1-0">CANADA</label></li>
+					</ul></li>
+				<li><input type="checkbox" id="item-8-0" /><label for="item-8-0">RYTHME SUD</label>
+					<ul>
+						<li><input type="checkbox" id="item-8-1-0" /><label for="item-8-1-0">ARGENTINE</label></li>
+					</ul></li>
+			</ul>
+</div>
+		</div>
+
+		<!-- Div du corps -->
+		<div class="content">
+		 <iframe id="frame1Id" name="frame1Name" src="..\HTML\PDF/FICHE CNB DKR.pdf" width="100%" height="100%"></iframe>
+		</div>
+		<!-- Div du pied de page -->
+		
+
+
+		<!-- Div à placer librement -->
+		<!-- <div class="deplace">
+
+		</div> -->
+
+	</body>
+
+</html>

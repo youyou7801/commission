@@ -1,0 +1,79 @@
+/* On change la taille du body */
+body {
+
+	width:				90%; /* Largeur max de notre body*/
+	
+	/* Nos marges de droite et de gauche sont calculés automatiquement pour centrer le body */
+	margin:				auto; 
+}
+
+
+/* Classe déstinée à la DIV qui contient la bannière */
+.banner img{
+	float: left;
+margin: 7px;
+width: 150px;
+height:105px;
+
+}
+.banner {
+	background-color:	white; /* Couleur */
+	width:				100%; /* Largeur */
+	height: 			125px; /* hauteur */
+	text-align: center;
+	
+
+
+	
+	/* On ajoute  30px d'espace en haut */
+	margin-top: 		3px; 
+}
+
+
+/* Classe déstinée à la div qui se déplace (démonstration uniquement) */
+.deplace {
+	background-color: 	red; /* couleur */
+	width: 				100px;
+	height: 			100px;
+
+	/* définit le type de position (relative ou absolute) */
+	/* Relative place les coordonnées x:0 et y:0 en haut du "conteneur parent", ici c'est body */
+	/* Absolute place les coordonnées x:0 et y:0 en haut de l'écran */
+	position: 			relative;
+	top: 				100px; /* Déplace la div sur l'axe Y vers le bas de 10px (right faisant l'inverse) */
+	left:				30px; /* Déplace la div sur l'axe X vers la droite de 30px (bottom faisant l'inverse) */
+}
+
+/* Classe pour la Div Menu */
+.menu {
+	
+	background-color: 	white;
+	width:				240px;	/* ]--------*----> Attention à la taille /!\        			 */
+	height: 			500px;  /* 			| 	  ici la taille total de .menu     			 */
+								/* 			|     est de 210px car nous avons      			 */
+	margin-top:			0px;	/* 			|     width à 200px + une marge à droite de 10px */
+	margin-right: 		0px;   /* ]--------*/
+
+	/* Rend la Div flottante et se positionne sur la gauche  */
+	float:				left;
+
+}
+
+/* Classe pour la Div du corps
+*  .content doit être sur la même ligne que .menu, donc la somme de leur largeur
+*  ne doit pas dépasser 960px (taille du body)
+*
+*  .menu fait déjà 210px, il nous reste donc 750px pour .content (960px - 210px)
+*/
+.content {
+	width:				80%; /* Nos 750px restant, pas besoins de donner de marge grace à celle de .menu */
+	height: 			750px;
+	background-color: 	red;
+	margin-top:			0px; /* Ne pas oublier la marge du haut pour l'espacement avec .banner */
+
+	/* Rend la Div flottante et se positionne sur la droite  */
+	float:				right;
+}
+
+
+}
